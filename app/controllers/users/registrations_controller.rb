@@ -1,4 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
+  #extended default devise gem behavior
   def create
     super do |resource|
       if params[:plan]
